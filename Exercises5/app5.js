@@ -10,8 +10,7 @@ while (!isDuplicated) {
     if (nums.indexOf(num) == -1) {
         nums.push(num);
         nums.sort((a, b) => a-b)
-    }
-    else {
+    } else {
         document.write(`The number ${num} has already been entered.`)
         isDuplicated = true
         ul.innerHTML += `<li>${nums}</li>`;
